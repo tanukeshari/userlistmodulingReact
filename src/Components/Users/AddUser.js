@@ -77,6 +77,6 @@ setEnteredUsername(event.target.value);
         </Card>,
        ]
     );
-  };
+};
 
   export default AddUser;

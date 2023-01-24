@@ -20,10 +20,7 @@ const ErrorModel =props =>{
         </footer>
         </Card>
     </div>
-   </div> )
-
-
+   </div> 
+   )
 }
-
-
 export default ErrorModel;

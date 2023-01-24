@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from "../card";
+import Card from "./Card";
 import Button from "./Button";
 
 import classes from "./ErrorModel.module.css";

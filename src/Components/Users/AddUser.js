@@ -4,6 +4,7 @@ import React, { useState } from 'react';
      import Button from '../UI/Button';
      import classes from './AddUser.module.css';
      import ErrorModel from '../UI/ErrorModel';
+     import Wrapper from '../Helpers/Wrapper';
 
   const AddUser = (props) => {
        const [enteredUserName, setEnteredUsername]  = useState();
@@ -46,7 +47,7 @@ setEnteredUsername(event.target.value);
         setError(null);
     };
 
-    return(<div>
+    return(<Wrapper>
        { error &&( 
         <ErrorModel 
         title={error.title}
@@ -73,7 +74,7 @@ setEnteredUsername(event.target.value);
             <Button type ="Submit">Add User</Button>
         </form>
         </Card>,
-       </div>
+       </Wrapper>
     );
 };
 

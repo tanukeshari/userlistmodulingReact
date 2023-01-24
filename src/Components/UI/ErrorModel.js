@@ -1,9 +1,7 @@
 import React from 'react';
 import Card from "./Card";
 import Button from "./Button";
-
 import classes from "./ErrorModel.module.css";
-
 
 const ErrorModel =props =>{
     return(<div>
@@ -21,6 +19,6 @@ const ErrorModel =props =>{
         </Card>
     </div>
    </div> 
-   )
-}
+   );
+};
 export default ErrorModel;

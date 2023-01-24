@@ -46,18 +46,16 @@ setEnteredUsername(event.target.value);
         setError(null);
     };
 
-    return(
-       [
-        error &&( 
+    return(<div>
+       { error &&( 
         <ErrorModel 
-        key ="error-model"
         title={error.title}
          message={error.message} 
          onConfirm ={errorHandler}
          />
-    ),
+    )}
 
-        <Card key ="add-user-card" className={classes.input}>
+        <Card className={classes.input}>
         <form onSubmit={AddUserHandler}>
             <label htmlFor="username">Username</label>
 
@@ -75,7 +73,7 @@ setEnteredUsername(event.target.value);
             <Button type ="Submit">Add User</Button>
         </form>
         </Card>,
-       ]
+       </div>
     );
 };
 

@@ -19,5 +19,4 @@ import AddUser from './Components/Users/AddUser';
     </div>
   );
 };
- 
 export default App;

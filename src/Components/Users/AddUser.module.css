@@ -19,7 +19,6 @@
     padding: 0.15rem;
     margin-bottom: 0.5rem;
 }
-
 .input input:focus {
     outline : none;
     border-color: #921da9;
